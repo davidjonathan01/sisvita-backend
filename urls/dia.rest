@@ -1,0 +1,27 @@
+# ENLACES DE ESCALA
+POST http://127.0.0.1:5000/dia_routes/create_dia
+Content-Type: application/json
+
+{
+    "nombre": "Lunes",
+    "descripcion": "Primer día del mes"
+}
+#####
+
+GET http://127.0.0.1:5000/dia_routes/get_dias
+#####
+
+GET http://127.0.0.1:5000/dia_routes/get_dia/1
+#####
+
+PUT http://127.0.0.1:5000/dia_routes/update_dia/13
+Content-Type: application/json
+
+{
+    "nombre": "Martes",
+    "descripcion": "Primer día del mes"
+}
+#####
+
+DELETE http://127.0.0.1:5000/dia_routes/delete_dia/13
+#####

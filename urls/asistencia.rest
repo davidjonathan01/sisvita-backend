@@ -1,0 +1,29 @@
+# ENLACES DE ASISTENCIA
+POST http://127.0.0.1:5000/asistencia_routes/create_asistencia
+Content-Type: application/json
+
+{
+    "fecha": "2024-06-11",
+    "id_taller": 1,
+    "id_paciente": 1
+}
+#####
+
+GET http://127.0.0.1:5000/asistencia_routes/get_asistencias
+#####
+
+GET http://127.0.0.1:5000/asistencia_routes/get_asistencia/1
+#####
+
+PUT http://127.0.0.1:5000/asistencia_routes/update_asistencia/11
+Content-Type: application/json
+
+{
+    "fecha": "2024-06-14",
+    "id_taller": 1,
+    "id_paciente": 2
+}
+#####
+
+DELETE http://127.0.0.1:5000/asistencia_routes/delete_asistencia/11
+#####

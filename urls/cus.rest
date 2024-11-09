@@ -1,0 +1,78 @@
+# ENLACES DE INICIAR SESION
+POST http://127.0.0.1:5000/cus_routes1/login
+Content-Type: application/json
+
+{
+    "email": "david.fernandez6@unmsm.edu.pe",
+    "contrasenia": "david2024",
+    "id_tipo_usuario": 3
+}
+##########
+
+
+POST http://127.0.0.1:5000/cus_routes2/realizar_test
+Content-Type: application/json
+
+{
+    "id_paciente": 1,
+    "id_test": 1,
+    "respuestas": "1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2"
+}
+##########
+
+
+POST http://127.0.0.1:5000/cus_routes2/calcular_puntaje
+Content-Type: application/json
+
+{
+    "id_evaluacion": 31
+}
+##########
+
+POST http://127.0.0.1:5000/cus_routes2/determinar_escala
+Content-Type: application/json
+
+{
+    "id_evaluacion": 36,
+    "id_especialista": 1
+}
+##########
+
+POST http://127.0.0.1:5000/cus_routes3/mapear_casos
+Content-Type: application/json
+
+{
+    "lista_pacientes": "1",
+    "id_test": 1
+}
+##########
+
+GET http://127.0.0.1:5000/identificar_ubigeo_routes/departamentos_unicos
+##########
+
+POST http://127.0.0.1:5000/identificar_ubigeo_routes/provincias_unicas
+Content-Type: application/json
+
+{
+    "departamento": "Lima"
+}
+##########
+
+POST http://127.0.0.1:5000/identificar_ubigeo_routes/distritos_unicos
+Content-Type: application/json
+
+{
+    "departamento": "Lima",
+    "provincia": "Lima"
+}
+##########
+
+POST http://127.0.0.1:5000/identificar_ubigeo_routes/identificar_ubigeo
+Content-Type: application/json
+
+{
+    "departamento": "Lima",
+    "provincia": "Lima",
+    "distrito": "Magdalena del Mar"
+}
+##########

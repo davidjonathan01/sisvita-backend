@@ -1,0 +1,33 @@
+# ENLACES DE ESCALA
+POST http://127.0.0.1:5000/escala_routes/create_escala
+Content-Type: application/json
+
+{
+    "nombre": "Ansiedad extrema",
+    "descripcion": "Escala para medir la ansiedad extrema",
+    "id_test": 3,
+    "puntaje_min": 0,
+    "puntaje_max": 100
+}
+#####
+
+GET http://127.0.0.1:5000/escala_routes/get_escalas
+#####
+
+GET http://127.0.0.1:5000/escala_routes/get_escala/1
+#####
+
+PUT http://127.0.0.1:5000/escala_routes/update_escala/7
+Content-Type: application/json
+
+{
+    "nombre": "Ansiedad severa",
+    "descripcion": "Escala para medir la gravedad de la ansiedad",
+    "id_test": 2,
+    "puntaje_min": 43,
+    "puntaje_max": 63
+}
+#####
+
+DELETE http://127.0.0.1:5000/escala_routes/delete_escala/13
+#####

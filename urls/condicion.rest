@@ -1,0 +1,27 @@
+# ENLACES DE ESCALA
+POST http://127.0.0.1:5000/condicion_routes/create_condicion
+Content-Type: application/json
+
+{
+    "nombre": "Estudiante de primaria",
+    "descripcion": "Estudiante del nivel primario - colegio"
+}
+#####
+
+GET http://127.0.0.1:5000/condicion_routes/get_condiciones
+#####
+
+GET http://127.0.0.1:5000/condicion_routes/get_condicion/1
+#####
+
+PUT http://127.0.0.1:5000/condicion_routes/update_condicion/13
+Content-Type: application/json
+
+{
+    "nombre": "Estudiante de secundaria",
+    "descripcion": "Estudiante del nivel secundario - colegio"
+}
+#####
+
+DELETE http://127.0.0.1:5000/condicion_routes/delete_condicion/13
+#####

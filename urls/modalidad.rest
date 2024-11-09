@@ -1,0 +1,27 @@
+# ENLACES DE MODALIDAD
+POST http://127.0.0.1:5000/modalidad_routes/create_modalidad
+Content-Type: application/json
+
+{
+    "nombre": "Modalidad 1",
+    "descripcion": "Descripcion 1"
+}
+#####
+
+GET http://127.0.0.1:5000/modalidad_routes/get_modalidades
+#####
+
+GET http://127.0.0.1:5000/modalidad_routes/get_modalidad/5
+#####
+
+PUT http://127.0.0.1:5000/modalidad_routes/update_modalidad/5
+Content-Type: application/json
+
+{
+    "nombre": "Modalidad 2",
+    "descripcion": "Descripcion 1"
+}
+#####
+
+DELETE http://127.0.0.1:5000/modalidad_routes/delete_modalidad/5
+#####

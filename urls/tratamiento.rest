@@ -1,0 +1,37 @@
+# ENLACES DE TRATAMIENTO
+POST http://127.0.0.1:5000/tratamiento_routes/create_tratamiento
+Content-Type: application/json
+
+{
+    "id_resultado": 1,
+    "objetivo": "Mejorar su calidad de vida",
+    "fec_asignacion": "2024-06-01",
+    "fec_inicio": "2024-06-11",
+    "fec_fin": "2024-06-30",
+    "id_estado": 2,
+    "observaciones": "Observaciones del tratamiento"
+}
+#####
+
+GET http://127.0.0.1:5000/tratamiento_routes/get_tratamientos
+#####
+
+GET http://127.0.0.1:5000/tratamiento_routes/get_tratamiento/7
+#####
+
+PUT http://127.0.0.1:5000/tratamiento_routes/update_tratamiento/7
+Content-Type: application/json
+
+{
+    "id_resultado": 1,
+    "objetivo": "Mejorar la calidad de vida del estudiante",
+    "fec_asignacion": "2024-06-01",
+    "fec_inicio": "2024-06-11",
+    "fec_fin": "2024-06-30",
+    "id_estado": 2,
+    "observaciones": "Observaciones del tratamiento"
+}
+#####
+
+DELETE http://127.0.0.1:5000/tratamiento_routes/delete_tratamiento/7
+#####

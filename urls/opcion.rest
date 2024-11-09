@@ -1,0 +1,33 @@
+# ENLACES DE MODALIDAD
+POST http://127.0.0.1:5000/opcion_routes/create_opcion
+Content-Type: application/json
+
+{
+    "id_test": 1,
+    "nombre": "Opcion 1",
+    "puntaje": 1,
+    "orden": 1,
+    "descripcion": "Descripcion 1"
+}
+#####
+
+GET http://127.0.0.1:5000/opcion_routes/get_opciones
+#####
+
+GET http://127.0.0.1:5000/opcion_routes/get_opcion/5
+#####
+
+PUT http://127.0.0.1:5000/opcion_routes/update_opcion/5
+Content-Type: application/json
+
+{
+    "id_test": 1,
+    "nombre": "Opcion 2",
+    "puntaje": 1,
+    "orden": 1,
+    "descripcion": "Descripcion 1"
+}
+#####
+
+DELETE http://127.0.0.1:5000/opcion_routes/delete_opcion/5
+#####

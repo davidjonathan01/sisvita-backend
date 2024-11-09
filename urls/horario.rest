@@ -1,0 +1,31 @@
+# ENLACES DE HORARIO
+POST http://127.0.0.1:5000/horario_routes/create_horario
+Content-Type: application/json
+
+{
+    "id_taller": 1,
+    "id_dia": 2,
+    "hora_inicio": "10:00:00",
+    "hora_fin": "12:00:00"
+}
+#####
+
+GET http://127.0.0.1:5000/horario_routes/get_horarios
+#####
+
+GET http://127.0.0.1:5000/horario_routes/get_horario/11
+#####
+
+PUT http://127.0.0.1:5000/horario_routes/update_horario/11
+Content-Type: application/json
+
+{
+    "id_taller": 1,
+    "id_dia": 3,
+    "hora_inicio": "10:00:00",
+    "hora_fin": "12:00:00"
+}
+#####
+
+DELETE http://127.0.0.1:5000/horario_routes/delete_horario/11
+#####

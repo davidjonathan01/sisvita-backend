@@ -1,0 +1,33 @@
+# ENLACES DE ESPECIALISTA (COMPLETO)
+POST http://127.0.0.1:5000/especialista_routes/create_especialista
+Content-Type: application/json
+
+{
+    "id_especialidad": 1,
+    "n_licencia": "13289654780",
+    "activo": true,
+    "id_persona": 18,
+    "id_usuario": 24
+}
+#####
+
+GET http://127.0.0.1:5000/especialista_routes/get_especialistas
+#####
+
+GET http://127.0.0.1:5000/especialista_routes/get_especialista/2
+#####
+
+PUT http://127.0.0.1:5000/especialista_routes/update_especialista/2
+Content-Type: application/json
+
+{
+    "id_especialidad": 1,
+    "n_licencia": "34561234123",
+    "activo": true,
+    "id_persona": 7,
+    "id_usuario": 9
+}
+#####
+
+DELETE http://127.0.0.1:5000/especialista_routes/delete_especialista/2
+#####

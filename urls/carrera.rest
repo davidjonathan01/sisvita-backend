@@ -1,0 +1,27 @@
+# ENLACES DE CARRERA
+POST http://127.0.0.1:5000/carrera_routes/create_carrera
+Content-Type: application/json
+
+{
+    "nombre": "Filosofía",
+    "descripcion": 1
+}
+#####
+
+GET http://127.0.0.1:5000/carrera_routes/get_carreras
+#####
+
+GET http://127.0.0.1:5000/carrera_routes/get_carrera/22
+#####
+
+PUT http://127.0.0.1:5000/carrera_routes/update_carrera/22
+Content-Type: application/json
+
+{
+    "nombre": "Psicología",
+    "descripcion": 1
+}
+#####
+
+DELETE http://127.0.0.1:5000/carrera_routes/delete_carrera/22
+#####

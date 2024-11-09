@@ -1,0 +1,31 @@
+# ENLACES DE PREGUNTA
+POST http://127.0.0.1:5000/pregunta_routes/create_pregunta
+Content-Type: application/json
+
+{
+    "id_test": 2,
+    "interrogante": "Pregunta 1",
+    "orden": 1,
+    "descripcion": "Esta es la pregunta 1"
+}
+#####
+
+GET http://127.0.0.1:5000/pregunta_routes/get_preguntas
+#####
+
+GET http://127.0.0.1:5000/pregunta_routes/get_pregunta/17
+#####
+
+PUT http://127.0.0.1:5000/pregunta_routes/update_pregunta/17
+Content-Type: application/json
+
+{
+    "id_test": 2,
+    "interrogante": "Pregunta 2",
+    "orden": 1,
+    "descripcion": "Esta es la pregunta 1"
+}
+#####
+
+DELETE http://127.0.0.1:5000/pregunta_routes/delete_pregunta/17
+#####

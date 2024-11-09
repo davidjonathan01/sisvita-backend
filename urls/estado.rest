@@ -1,0 +1,29 @@
+# ENLACES DE ESTADO
+POST http://127.0.0.1:5000/estado_routes/create_estado
+Content-Type: application/json
+
+{
+    "nombre": "En revisión",
+    "descripcion": "El paciente se encuentra en revisión",
+    "id_tipo_estado": 1
+}
+#####
+
+GET http://127.0.0.1:5000/estado_routes/get_estados
+#####
+
+GET http://127.0.0.1:5000/estado_routes/get_estado/6
+#####
+
+PUT http://127.0.0.1:5000/estado_routes/update_estado/6
+Content-Type: application/json
+
+{
+    "nombre": "En revisión",
+    "descripcion": "Se encuentra en revisión",
+    "id_tipo_estado": 1
+}
+#####
+
+DELETE http://127.0.0.1:5000/estado_routes/delete_estado/6
+#####

@@ -1,0 +1,31 @@
+# ENLACES DE HORARIO
+POST http://127.0.0.1:5000/jornada_routes/create_jornada
+Content-Type: application/json
+
+{
+    "id_especialista": 1,
+    "id_dia": 2,
+    "hora_inicio": "06:00",
+    "hora_fin": "10:00"
+}
+#####
+
+GET http://127.0.0.1:5000/jornada_routes/get_jornadas
+#####
+
+GET http://127.0.0.1:5000/jornada_routes/get_jornada/11
+#####
+
+PUT http://127.0.0.1:5000/jornada_routes/update_jornada/11
+Content-Type: application/json
+
+{
+    "id_especialista": 1,
+    "id_dia": 2,
+    "hora_inicio": "06:00",
+    "hora_fin": "11:00"
+}
+#####
+
+DELETE http://127.0.0.1:5000/jornada_routes/delete_jornada/11
+#####

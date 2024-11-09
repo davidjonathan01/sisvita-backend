@@ -1,0 +1,33 @@
+# ENLACES DE ESTUDIANTE (COMPLETO PERO OJITO)
+POST http://127.0.0.1:5000/paciente_routes/create_paciente
+Content-Type: application/json
+
+{
+    "id_ubigeo": 3299,
+    "id_condicion": 2,
+    "id_carrera": 1,
+    "id_persona": 2,
+    "id_usuario": 8
+}
+#####
+
+GET http://127.0.0.1:5000/paciente_routes/get_pacientes
+#####
+
+GET http://127.0.0.1:5000/paciente_routes/get_paciente/2
+#####
+
+PUT http://127.0.0.1:5000/paciente_routes/update_paciente/2
+Content-Type: application/json
+
+{
+    "id_ubigeo": 1,
+    "id_condicion": 1,
+    "id_carrera": 2,
+    "id_persona": 1,
+    "id_usuario": 1
+}
+#####
+
+DELETE http://127.0.0.1:5000/paciente_routes/delete_paciente/2
+#####

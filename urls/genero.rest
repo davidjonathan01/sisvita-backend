@@ -1,0 +1,27 @@
+# ENLACES DE GENERO
+POST http://127.0.0.1:5000/genero_routes/create_genero
+Content-Type: application/json
+
+{
+    "nombre": "Genero 3",
+    "descripcion": "Descripcion 3"
+}
+#####
+
+GET http://127.0.0.1:5000/genero_routes/get_generos
+#####
+
+GET http://127.0.0.1:5000/genero_routes/get_genero/12
+#####
+
+PUT http://127.0.0.1:5000/genero_routes/update_genero/12
+Content-Type: application/json
+
+{
+    "nombre": "Genero 4",
+    "descripcion": "Descripcion 3"
+}
+#####
+
+DELETE http://127.0.0.1:5000/genero_routes/delete_genero/12
+#####

@@ -1,0 +1,35 @@
+# ENLACES DE TRATAMIENTO
+POST http://127.0.0.1:5000/ubigeo_routes/create_ubigeo
+Content-Type: application/json
+
+{
+    "codigo": "123456",
+    "departamento": "Lima",
+    "provincia": "Lima",
+    "distrito": "Magdalena del Mar",
+    "latitud": -12.0931,
+    "longitud": -77.0465
+}
+#####
+
+GET http://127.0.0.1:5000/ubigeo_routes/get_ubigeos
+#####
+
+GET http://127.0.0.1:5000/ubigeo_routes/get_ubigeo/7
+#####
+
+PUT http://127.0.0.1:5000/ubigeo_routes/update_ubigeo/7
+Content-Type: application/json
+
+{
+    "codigo": "789012",
+    "departamento": "Lima",
+    "provincia": "Lima",
+    "distrito": "Magdalena del Mar",
+    "latitud": -12.0931,
+    "longitud": -77.0465
+}
+#####
+
+DELETE http://127.0.0.1:5000/ubigeo_routes/delete_ubigeo/7
+#####

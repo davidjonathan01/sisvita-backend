@@ -1,0 +1,35 @@
+# ENLACES DE TEST 
+POST http://127.0.0.1:5000/test_routes/create_test
+Content-Type: application/json
+
+{
+    "nombre": "Test 3",
+    "id_tipo_test": 1,
+    "n_preguntas": 15,
+    "id_idioma": 1,
+    "n_version": 1,
+    "descripcion": "Test de prueba",
+}
+#####
+
+GET http://127.0.0.1:5000/test_routes/get_tests
+#####
+
+GET http://127.0.0.1:5000/test_routes/get_test/5
+#####
+
+PUT http://127.0.0.1:5000/test_routes/update_test/5
+Content-Type: application/json
+
+{
+    "nombre": "Test 3",
+    "id_tipo_test": 1,
+    "n_preguntas": 15,
+    "id_idioma": 1,
+    "n_version": 1,
+    "descripcion": "Test de prueba modificado",
+}
+#####
+
+DELETE http://127.0.0.1:5000/test_routes/delete_test/5
+#####

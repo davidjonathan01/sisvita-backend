@@ -1,0 +1,27 @@
+# ENLACES DE TIPO USUARIO (COMPLETO)
+POST http://127.0.0.1:5000/tipo_usuario_routes/create_tipo_usuario
+Content-Type: application/json
+
+{
+    "nombre": "Nuevo tipo",
+    "descripcion": "Nuevo tipo de usuario"
+}
+#####
+
+GET http://127.0.0.1:5000/tipo_usuario_routes/get_tipos_usuario
+#####
+
+GET http://127.0.0.1:5000/tipo_usuario_routes/get_tipo_usuario/3
+#####
+
+PUT http://127.0.0.1:5000/tipo_usuario_routes/update_tipo_usuario/4
+Content-Type: application/json
+
+{
+    "nombre": "Nuevo tipo 123",
+    "descripcion": "Nuevo tipo de usuario"
+}
+#####
+
+DELETE http://127.0.0.1:5000/tipo_usuario_routes/delete_tipo_usuario/4
+#####

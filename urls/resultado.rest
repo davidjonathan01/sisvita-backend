@@ -1,0 +1,37 @@
+# ENLACES DE RESULTADO 
+POST http://127.0.0.1:5000/resultado_routes/create_resultado
+Content-Type: application/json
+
+{
+    "id_evaluacion": 7,
+    "id_especialista": 2,
+    "id_estado": 1,
+    "id_escala": 1,
+    "fec_interpretacion": "2021-09-01",
+    "observacion": "Esta es la observacion",
+}
+#####
+
+GET http://127.0.0.1:5000/resultado_routes/get_resultados
+#####
+
+GET http://127.0.0.1:5000/resultado_routes/get_resultado/6
+#####
+
+PUT http://127.0.0.1:5000/resultado_routes/update_resultado/9
+Content-Type: application/json
+
+{
+     "id_evaluacion": 17,
+    "id_especialista": 1,
+    "id_estado": 4,
+    "id_escala": 7,
+    "fec_interpretacion": null,
+    "observacion":  null,
+    "informe": null,
+    "recomendacion": null
+}
+#####
+
+DELETE http://127.0.0.1:5000/resultado_routes/delete_resultado/4
+#####

@@ -1,0 +1,35 @@
+# ENLACES DE EVALUACION
+POST http://127.0.0.1:5000/evaluacion_routes/create_evaluacion
+Content-Type: application/json
+
+{
+    "id_paciente": 1,
+    "id_test": 1,
+    "respuestas": "1 0 1 2 0 1 1",
+    "fec_realizacion": "2024-02-01",
+    "puntaje": 6,
+    "id_escala": 1
+}
+#####
+
+GET http://127.0.0.1:5000/evaluacion_routes/get_evaluaciones
+##### por revisar
+
+GET http://127.0.0.1:5000/evaluacion_routes/get_evaluacion/8
+#####
+
+PUT http://127.0.0.1:5000/evaluacion_routes/update_evaluacion/8
+Content-Type: application/json
+
+{
+    "id_paciente": 2,
+    "id_test": 1,
+    "respuestas": "1 0 1 2 0 1 1",
+    "fec_realizacion": "2024-02-01",
+    "puntaje": 6,
+    "id_escala": 1
+}
+#####
+
+DELETE http://127.0.0.1:5000/evaluacion_routes/delete_evaluacion/8
+#####

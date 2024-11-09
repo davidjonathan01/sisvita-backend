@@ -1,0 +1,33 @@
+# ENLACES DE RECURSO
+POST http://127.0.0.1:5000/recurso_routes/create_recurso
+Content-Type: application/json
+
+{
+    "id_especialista": 2,
+    "titulo": "Nuevo recurso",
+    "contenido": "Este es un nuevo recurso",
+    "fec_publicacion": "2021-09-01",
+    "fec_edicion": null
+}
+#####
+
+GET http://127.0.0.1:5000/recurso_routes/get_recursos
+#####
+
+GET http://127.0.0.1:5000/recurso_routes/get_recurso/9
+#####
+
+PUT http://127.0.0.1:5000/recurso_routes/update_recurso/9
+Content-Type: application/json
+
+{
+    "id_especialista": 2,
+    "titulo": "Nuevo recurso 1",
+    "contenido": "Este es un nuevo recurso",
+    "fec_publicacion": "2021-09-01",
+    "fec_edicion": "2021-09-02"
+}
+#####
+
+DELETE http://127.0.0.1:5000/recurso_routes/delete_recurso/9
+#####

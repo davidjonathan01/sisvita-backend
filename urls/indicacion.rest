@@ -1,0 +1,29 @@
+# ENLACES DE HORARIO
+POST http://127.0.0.1:5000/indicacion_routes/create_indicacion
+Content-Type: application/json
+
+{
+    "id_tratamiento": 1,
+    "orden": "Meditar todas las mañanas",
+    "descripcion": "Realizar una rutina de meditación matutina"
+}
+#####
+
+GET http://127.0.0.1:5000/indicacion_routes/get_indicaciones
+#####
+
+GET http://127.0.0.1:5000/indicacion_routes/get_indicacion/11
+#####
+
+PUT http://127.0.0.1:5000/indicacion_routes/update_indicacion/11
+Content-Type: application/json
+
+{
+    "id_tratamiento": 1,
+    "orden": "Meditar todas las tardes",
+    "descripcion": "Realizar una rutina de meditación"
+}
+#####
+
+DELETE http://127.0.0.1:5000/indicacion_routes/delete_indicacion/11
+#####

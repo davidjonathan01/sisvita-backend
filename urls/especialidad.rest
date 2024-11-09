@@ -1,0 +1,27 @@
+# ENLACES DE ESPECIALIDAD
+POST http://127.0.0.1:5000/especialidad_routes/create_especialidad
+Content-Type: application/json
+
+{
+    "titulo": "Psiquiatra",
+    "descripcion": "Especialidad en psiquiatría"
+}
+#####
+
+GET http://127.0.0.1:5000/especialidad_routes/get_especialidades
+#####
+
+GET http://127.0.0.1:5000/especialidad_routes/get_especialidad/7
+#####
+
+PUT http://127.0.0.1:5000/especialidad_routes/update_especialidad/7
+Content-Type: application/json
+
+{
+    "titulo": "Psiquiatra",
+    "descripcion": "Especialidad de psiquiatría"
+}
+#####
+
+DELETE http://127.0.0.1:5000/especialidad_routes/delete_especialidad/7
+#####

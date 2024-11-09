@@ -1,0 +1,37 @@
+# ENLACES DE TALLER (LISTO)
+POST http://127.0.0.1:5000/taller_routes/create_taller
+Content-Type: application/json
+
+{
+    "nombre": "taller 1",
+    "id_especialista": 1,
+    "n_vacantes": 15,
+    "fec_inicio": "2024-07-07",
+    "fec_fin": "2024-08-07",
+    "id_modalidad": 2,
+    "id_estado": 1
+}
+#####
+
+GET http://127.0.0.1:5000/taller_routes/get_talleres
+#####
+
+GET http://127.0.0.1:5000/taller_routes/get_taller/4
+#####
+
+PUT http://127.0.0.1:5000/taller_routes/update_taller/4
+Content-Type: application/json
+
+{
+    "nombre": "taller 1",
+    "id_especialista": 1,
+    "n_vacantes": 13,
+    "fec_inicio": "2024-07-07",
+    "fec_fin": "2024-08-07",
+    "id_modalidad": 2,
+    "id_estado": 1
+}
+#####
+
+DELETE http://127.0.0.1:5000/taller_routes/delete_taller/4
+#####

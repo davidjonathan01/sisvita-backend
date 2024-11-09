@@ -1,0 +1,27 @@
+# ENLACES DE TEST 
+POST http://127.0.0.1:5000/tipo_estado_routes/create_tipo_estado
+Content-Type: application/json
+
+{
+    "nombre": "Tipo estado 1",
+    "descripcion": "Tipo estado de prueba",
+}
+#####
+
+GET http://127.0.0.1:5000/tipo_estado_routes/get_tipos_estado
+#####
+
+GET http://127.0.0.1:5000/tipo_estado_routes/get_tipo_estado/5
+#####
+
+PUT http://127.0.0.1:5000/tipo_estado_routes/update_tipo_estado/5
+Content-Type: application/json
+
+{
+    "nombre": "Tipo estado 1",
+    "descripcion": "Tipo estado de prueba modificado",
+}
+#####
+
+DELETE http://127.0.0.1:5000/tipo_estado_routes/delete_tipo_estado/5
+#####

@@ -1,0 +1,27 @@
+# ENLACES DE HORARIO
+POST http://127.0.0.1:5000/idioma_routes/create_idioma
+Content-Type: application/json
+
+{
+    "nombre": "Inglés",
+    "descripcion": "Idioma inglés"
+}
+#####
+
+GET http://127.0.0.1:5000/idioma_routes/get_idiomas
+#####
+
+GET http://127.0.0.1:5000/idioma_routes/get_idioma/11
+#####
+
+PUT http://127.0.0.1:5000/idioma_routes/update_idioma/11
+Content-Type: application/json
+
+{
+    "nombre": "Inglés",
+    "descripcion": "Idioma inglés estadounidense"
+}
+#####
+
+DELETE http://127.0.0.1:5000/idioma_routes/delete_idioma/11
+#####
